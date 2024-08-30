@@ -2,11 +2,12 @@ package models;
 
 import java.util.List;
 
-import lombok.Getter;
-import lombok.Setter;
+import jakarta.persistence.Entity;
+import lombok.*;
 
 @Getter
 @Setter
+@Entity
 public class Booking extends BaseModel{
 	private User user;
 	private Long referenceId;
